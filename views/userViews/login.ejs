@@ -1,0 +1,39 @@
+<%- include("../partials/header") %>
+
+        <div class="main-content">
+
+            <div class="container form-container">
+                <form action="/user/login" class="container w-50" method="POST">
+
+                    <div class="mb-3">
+
+                        <label for="exampleInputUsername" class="form-label"
+                            >Username or email</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputUsername"
+                            aria-describedby="usernameinput"
+                            name="username"
+                        />
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                            >Password</label
+                        >
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            name="password"
+                        />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+
+<%- include("../partials/footer") %>
